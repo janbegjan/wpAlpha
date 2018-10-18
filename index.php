@@ -2,11 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello Dolly</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo get_theme_file_uri('/style.css'); ?>">
-</head>
-<body>
+    <?php wp_head(); ?>
+<body <?php body_class(); ?>>
 <div class="header">
     <div class="container">
         <div class="row">
@@ -141,5 +138,6 @@
         </div>
     </div>
 </div>
+<?php wp_footer(); ?>
 </body>
 </html>
