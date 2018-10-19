@@ -38,6 +38,13 @@
                     <?php the_content(); ?>
                   
                 </div>
+                <?php 
+                  if(comments_open()):
+                ?>
+                <div class="comments_form">
+                  <?php comments_template(); ?>
+                </div>
+                <?php endif; ?>
             </div>
 
         </div>
