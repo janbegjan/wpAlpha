@@ -33,9 +33,11 @@
                         <strong><?php the_author(); ?></strong><br/>
                        <?php echo get_the_date(); ?>
                     </p>
-                    <ul class="list-unstyled">
-                        <li>dhaka</li>
-                    </ul>
+                    <?php  
+                      if(get_the_tag_list()) {
+                          echo get_the_tag_list('<ul class="list-unstyled"><li>','</li><li>','</li></ul>');
+                      }
+                      ?>
                 </div>
                 <div class="col-md-8">
                     <p>
