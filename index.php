@@ -48,12 +48,28 @@
                       ?>
                     </p>
                     <?php the_excerpt(); ?>
+                  
                 </div>
             </div>
 
         </div>
     </div>
   <?php endwhile; ?>
+  <div class="row">
+    <div class="col-md-4"></div>
+      <div class="col-md-8">
+        <div class="pagination">
+          <?php 
+            the_posts_pagination( array(
+            'mid_size' => 2,
+            'screen_reader_text' => ' ',
+            'prev_text' => __( 'Newer', 'wptextual' ),
+            'next_text' => __( 'Older', 'wptextual' ),
+          )); ?> 
+        </div>
+      </div>
+  </div>
+  
 </div>
 <div class="footer">
     <div class="container">
