@@ -34,7 +34,13 @@ h3.tagline{
 h2.post-title {
   margin-bottom: 30px;
 }
+.heading a,
+.h2.post-title a,
+.post-title a{
+  color: inherit;
+  text-decoration: none;
 
+}
 .post {
   margin-bottom: 50px;
 }
