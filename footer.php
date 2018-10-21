@@ -2,7 +2,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                &copy; LWHH - All Rights Reserved
+            <?php 
+              if(is_active_sidebar( 'sidebar_footer' )){
+                dynamic_sidebar( 'sidebar_footer' );
+              }
+            ?>
             </div>
         </div>
     </div>

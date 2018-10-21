@@ -23,13 +23,22 @@ function wpAlpha_assets(){
 }
 add_action('wp_enqueue_scripts', 'wpAlpha_assets');
 /**
-* Add Right sidebar register.
+* Add Right sidebar, Footer Widgets register.
 */
 function wpAlpha_register_sidebar() {
   register_sidebar( array(
   'name'          => __( 'Right Sidebar', 'wpAlpha' ),
   'id'            => 'sidebar_right',
   'description'   => __( 'Widgets in this area will be shown on single post page.', 'wpAlpha' ),
+  'before_widget' => '<section id="%1s" class="widget %2s">',
+  'after_widget'  => '</section>',
+  'before_title'  => '<h2 class="widget-title">',
+  'after_title'   => '</h2>',
+  ));
+  register_sidebar( array(
+  'name'          => __( 'Footer Sidebar', 'wpAlpha' ),
+  'id'            => 'sidebar_footer',
+  'description'   => __( 'Widgets in this area will be shown on footer section.', 'wpAlpha' ),
   'before_widget' => '<section id="%1s" class="widget %2s">',
   'after_widget'  => '</section>',
   'before_title'  => '<h2 class="widget-title">',
