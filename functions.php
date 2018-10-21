@@ -29,7 +29,7 @@ function wpAlpha_register_sidebar() {
   register_sidebar( array(
   'name'          => __( 'Right Sidebar', 'wpAlpha' ),
   'id'            => 'sidebar_right',
-  'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'wpAlpha' ),
+  'description'   => __( 'Widgets in this area will be shown on single post page.', 'wpAlpha' ),
   'before_widget' => '<section id="%1s" class="widget %2s">',
   'after_widget'  => '</section>',
   'before_title'  => '<h2 class="widget-title">',
