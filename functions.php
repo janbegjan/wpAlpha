@@ -46,3 +46,17 @@ function wpAlpha_register_sidebar() {
   ));
 }
 add_action( 'widgets_init', 'wpAlpha_register_sidebar' );
+/**
+* Add post password filter.
+*/
+function wpAlpha_post_password_required($excerpt)
+{
+  if(!post_password_required())
+  {
+    echo $excerpt;
+  }else
+  {
+    echo get_the_password_form();
+  }
+}
+add_filter( 'the_excerpt', 'wpAlpha_post_password_required' );
