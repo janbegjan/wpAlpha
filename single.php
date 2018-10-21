@@ -38,6 +38,11 @@
                     <?php the_content(); ?>
                   
                 </div>
+                <div class="col-md-10 offset-md-1">
+                  <span class="text-left"><?php next_post_link(); ?>
+                  <span class="text-right"><?php previous_post_link(); ?></span> 
+                </div>
+                   
                 <?php 
                   if(comments_open()):
                 ?>
@@ -45,6 +50,7 @@
                   <?php comments_template(); ?>
                 </div>
                 <?php endif; ?>
+
             </div>
 
         </div>
