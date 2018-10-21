@@ -60,3 +60,11 @@ function wpAlpha_post_password_required($excerpt)
   }
 }
 add_filter( 'the_excerpt', 'wpAlpha_post_password_required' );
+/**
+* Add post post protected title filter.
+*/
+function wpAlpha_protected_title_change()
+{
+return '%s';
+}
+add_filter( 'protected_title_format', 'wpAlpha_protected_title_change' );
