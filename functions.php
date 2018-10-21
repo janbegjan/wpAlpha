@@ -68,3 +68,11 @@ function wpAlpha_protected_title_change()
 return '%s';
 }
 add_filter( 'protected_title_format', 'wpAlpha_protected_title_change' );
+/**
+* Adding B4 list-inline-item Class to menus.
+*/
+function wpAlpha_menu_item_class($classes, $item){
+$classes[] = 'list-inline-item';
+return $classes;
+}
+add_filter( 'nav_menu_css_class', 'wpAlpha_menu_item_class', 10, 2 );
