@@ -16,7 +16,7 @@
                   wp_nav_menu(array(
                     'menu'=>'Footer_menu',
                     'menu_id'=>'Footer_menu_container',
-                    'menu_class'=>'list-inline text-center',
+                    'menu_class'=>'list-inline text-right',
                   ));
             ?>
             </div>
