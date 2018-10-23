@@ -7,13 +7,13 @@
             </div>
             <div class="col-md-12">
               <div class="navigation">
-                <?php 
+                <?php
                   /**
-                  *Adding theme Top_menu
+                  *Adding theme main_menu
                   */
                   wp_nav_menu(array(
-                    'menu'=>'Top_menu',
-                    'menu_id'=>'Top_menu_container',
+                    'theme_location'=>'main_menu',
+                    'menu_id'=>'main_menu_container',
                     'menu_class'=>'list-inline text-center',
                   ));
                 ?>

@@ -11,13 +11,13 @@
             <div class="col-md-6">
             <?php 
               /**
-                  *Adding theme Footer menu
-                  */
-                  wp_nav_menu(array(
-                    'menu'=>'Footer_menu',
-                    'menu_id'=>'Footer_menu_container',
-                    'menu_class'=>'list-inline text-right',
-                  ));
+              *Adding theme footermenu
+              */
+              wp_nav_menu(array(
+                'theme_location'=>'footermenu',
+                'menu_id'=>'footermenu_container',
+                'menu_class'=>'list-inline text-center',
+              ));
             ?>
             </div>
         </div>
