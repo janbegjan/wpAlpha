@@ -2,7 +2,7 @@
 /**
 * wpAlpha theme cache busting
 */
-if(site_url() == 'http://example.test/'){
+if(site_url() == "http://example.test"){
 	define('VERSION', time());
 }else{
 	define('VERSION', wp_get_theme() -> get('Version'));
