@@ -88,6 +88,17 @@ function wpAlpha_register_sidebar()
         'after_title'   => '</h2>',
         )
     );
+    register_sidebar(
+        array(
+        'name'          => __('404 Sidebar', 'wpAlpha'),
+        'id'            => 'sidebar_404',
+        'description'   => __('Widgets in this area will be shown on 404 page.', 'wpAlpha'),
+        'before_widget' => '<section id="%1s" class="widget %2s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+        )
+    );
 }
 add_action('widgets_init', 'wpAlpha_register_sidebar');
 /**
