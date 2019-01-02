@@ -17,6 +17,7 @@ function wpAlpha_bootstrapping()
     load_theme_textdomain('wpAlpha');
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
+    add_theme_support('custom-header');
     register_nav_menu('main_menu', __('Top menu', 'wpAlpha'));
     register_nav_menu('footermenu', __('Footer menu', 'wpAlpha'));
 }
@@ -116,10 +117,25 @@ function wpAlpha_about_page_template_bg(){
 ?>
 	<style>
 		.page-header{
-			background-image: url( <?php echo $page_thumbnail_url ?>);
+			background-image: url( <?php echo $page_thumbnail_url; ?>);
 		}
 	</style>
 <?php
+	}
+	if(is_front_page()){
+		if(current_theme_supports("custom-header")){
+
+
+		?>
+		<style>
+			.header{
+				background-image: url(<?php echo header_image(); ?>);
+				background-size: cover;
+				margin-bottom: 50px;
+			}
+		</style>
+		<?php	
+		}
 	}
 }
 add_action("wp_head", "wpAlpha_about_page_template_bg", 1);
