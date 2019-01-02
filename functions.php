@@ -105,3 +105,21 @@ function wpAlpha_menu_item_class($classes, $item)
     return $classes;
 }
 add_filter('nav_menu_css_class', 'wpAlpha_menu_item_class', 10, 2);
+
+
+/*
+* Adding dynamic support to about page template background
+*/
+function wpAlpha_about_page_template_bg(){
+	if(is_page()){
+		$page_thumbnail_url = get_the_post_thumbnail_url(null, "large");
+?>
+	<style>
+		.page-header{
+			background-image: url( <?php echo $page_thumbnail_url ?>);
+		}
+	</style>
+<?php
+	}
+}
+add_action("wp_head", "wpAlpha_about_page_template_bg", 1);

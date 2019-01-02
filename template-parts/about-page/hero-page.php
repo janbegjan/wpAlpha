@@ -1,8 +1,4 @@
-<?php
-$page_thumbnail_url = get_the_post_thumbnail_url(null, "large");
-?>
-
-<div class="header page-header" style="background-image: url( <?php echo $page_thumbnail_url ?>);">
+<div class="header page-header"">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
