@@ -128,3 +128,7 @@ a.page-numbers:hover {
 	padding:170px 0px;
 	/* background-image: url(http://demo.lwhh.com/wp-content/uploads/2018/05/pexels-photo-301929-1024x683.jpeg); */
 }
+.header-logo{
+	margin-top: 50px;
+}
+.header-logo img{border-radius: 50px;}

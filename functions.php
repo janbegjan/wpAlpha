@@ -21,7 +21,12 @@ function wpAlpha_bootstrapping()
 				'header-text'	=> true,
 				'default-text-color' => '#fff'
 			);
-    add_theme_support('custom-header', $wpAlpha_custom_header_details);
+		add_theme_support('custom-header', $wpAlpha_custom_header_details);
+			$wpAlpha_custom_logo_details = array(
+				'width'	=> '100',
+				'height'	=> '100'
+			);
+		add_theme_support("custom-logo", $wpAlpha_custom_logo_details);
     register_nav_menu('main_menu', __('Top menu', 'wpAlpha'));
     register_nav_menu('footermenu', __('Footer menu', 'wpAlpha'));
 }
