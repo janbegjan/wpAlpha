@@ -9,13 +9,15 @@
               <div class="navigation">
                 <?php
                   /**
-                  *Adding theme main_menu
-                  */
-                  wp_nav_menu(array(
+                   * Adding theme main_menu
+                   */
+                wp_nav_menu(
+                    array(
                     'theme_location'=>'main_menu',
                     'menu_id'=>'main_menu_container',
                     'menu_class'=>'list-inline text-center',
-                  ));
+                    )
+                );
                 ?>
               </div>
             </div>
