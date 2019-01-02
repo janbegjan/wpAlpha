@@ -31,6 +31,7 @@ function wpAlpha_bootstrapping()
 				'height'	=> '100'
 			);
 		add_theme_support("custom-logo", $wpAlpha_custom_logo_details);
+		add_theme_support("custom-background");
     register_nav_menu('main_menu', __('Top menu', 'wpAlpha'));
     register_nav_menu('footermenu', __('Footer menu', 'wpAlpha'));
 }
