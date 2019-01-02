@@ -19,7 +19,11 @@ function wpAlpha_bootstrapping()
 		add_theme_support('post-thumbnails');
 			$wpAlpha_custom_header_details = array(
 				'header-text'	=> true,
-				'default-text-color' => '#fff'
+				'default-text-color' => '#fff',
+				'width'	=> '1200',
+				'height'	=> '600',
+				'flex-width'	=> true,
+				'flex-height'	=> true
 			);
 		add_theme_support('custom-header', $wpAlpha_custom_header_details);
 			$wpAlpha_custom_logo_details = array(
