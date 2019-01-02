@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+<body <?php body_class(); ?>>
+<?php get_template_part('hero'); ?>
 <div class="single-post row">
 	<div class="col-md-8">
 		<div class="posts">
